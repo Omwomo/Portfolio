@@ -9,12 +9,12 @@
     margin-top: 2rem;
   }
 
-.navbar {
-  float: right;
-  display: flex;
-  margin-right: 2rem;
-  margin-top: -1rem;
-}
+  .navbar {
+    float: right;
+    display: flex;
+    margin-right: 2rem;
+    margin-top: -1rem;
+  }
 
   .container {
     align-content: center;
