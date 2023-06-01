@@ -1,12 +1,12 @@
 @media (min-width: 375px), (min-width: 768px) {
-.Intro {
-  background-image: url("header-shapes\ mobile@2x.svg");
+  .Intro {
+    background-image: url("header-shapes\ mobile@2x.svg");
   }
 
-.logo {
-  display: flex;
-  margin-left: 2rem;
-  margin-top: 2rem;
+  .logo {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
 
 .navbar {
@@ -14,51 +14,51 @@
   display: flex;
   margin-right: 2rem;
   margin-top: -1rem;
+}
+
+  .container {
+    align-content: center;
+    align-items: center;
   }
 
-.container {
-  align-content: center;
-  align-items: center;
+  h2 {
+    align-items: flex-start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    display: flex;
+    margin-left: 2rem;
+    color: #344563;
+    margin-bottom: 0.7rem;
+    margin-top: 7rem;
   }
 
-h2 {
-  align-items: flex-start;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3.7rem;
-  display: flex;
-  margin-left: 2rem;
-  color: #344563;
-  margin-bottom: 0.7rem;
-  margin-top: 7rem;
+  .description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #344563;
+    margin-top: 0.1rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
   }
 
-.description {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #344563;
-  margin-top: 0.1rem;
-  margin-left: 1.8rem;
-  margin-right: 1.8rem;
+  h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #7f8fff;
+    margin-left: 1.8rem;
   }
 
-h3 {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  color: #7f8fff;
-  margin-left: 1.8rem;
+  .contact {
+    margin-left: 1.8rem;
+    display: flex;
   }
 
-.contact {
-  margin-left: 1.8rem;
-  display: flex;
-  }
-
-.icons {
-  padding-right: 1.5rem;
+  .icons {
+    padding-right: 1.5rem;
   }
 }
