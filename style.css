@@ -1,0 +1,66 @@
+@media (min-width: 375px), (min-width: 768px) {
+  .Intro {
+    background-image: url("background.svg");
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .navbar {
+    float: right;
+    display: flex;
+    margin-right: 2rem;
+    margin-top: -1rem;
+  }
+
+  .container {
+    align-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    align-items: flex-start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.7rem;
+    display: flex;
+    margin-left: 2rem;
+    color: #344563;
+    margin-bottom: 0.7rem;
+    margin-top: 7rem;
+  }
+
+  .description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #344563;
+    margin-top: 0.1rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+
+  h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #7f8fff;
+    margin-left: 1.8rem;
+  }
+
+  .contact {
+    margin-left: -0.5rem;
+    display: flex;
+    list-style: none;
+  }
+
+  .icons {
+    padding-right: 1.5rem;
+  }
+}
