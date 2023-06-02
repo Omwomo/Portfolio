@@ -1,6 +1,7 @@
 @media (min-width: 375px), (min-width: 768px) {
   .Intro {
     background-image: url("background.svg");
+    background-repeat: no-repeat;
   }
 
   .logo {
