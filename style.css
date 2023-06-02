@@ -1,6 +1,6 @@
 @media (min-width: 375px), (min-width: 768px) {
   .Intro {
-    background-image: url("header-shapes\ mobile@2x.svg");
+    background-image: url("background.svg");
   }
 
   .logo {
@@ -21,7 +21,7 @@
     align-items: center;
   }
 
-  h2 {
+  h1 {
     align-items: flex-start;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
@@ -54,8 +54,9 @@
   }
 
   .contact {
-    margin-left: 1.8rem;
+    margin-left: -0.5rem;
     display: flex;
+    list-style: none;
   }
 
   .icons {
