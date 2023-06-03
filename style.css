@@ -99,7 +99,7 @@
 
   .project_name {
     margin-top: 0.2rem;
-    font-family: monospace;
+    font-family: poppins;
     font-style: normal;
     font-weight: 1200;
     font-size: 1.8rem;
@@ -135,7 +135,7 @@
   }
 
   .info {
-    font-family: monospace;
+    font-family: 'poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 0.938rem;
@@ -163,7 +163,7 @@
     background: #ebebff;
     border-radius: 8px;
     height: 16px;
-    font-family: monospace;
+    font-family: 'poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -194,14 +194,15 @@
     height: 48px;
     border: 1px solid #6070ff;
     border-radius: 8px;
-    font-family: monospace;
+    font-family: 'poppins';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 15px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
+    background-color: #fff;
   }
 
   .button:hover {
@@ -220,13 +221,20 @@
     color: #5e6c84;
   }
 
+  .let {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #7f8fff;
+    margin-left: 0.1rem;
+  }
+
   .work {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 114px 24px;
     gap: 88px;
-    position: absolute;
     width: 375px;
     height: 2788px;
     top: 718px;
@@ -259,7 +267,7 @@
   h5 {
     width: 327px;
     height: 35px;
-    font-family: monospace;
+    font-family: 'poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -272,7 +280,7 @@
   .about_description {
     width: 327px;
     height: 147px;
-    font-family: monospace;
+    font-family: 'poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -298,9 +306,9 @@
     height: 48px;
     border: 1px solid #6070ff;
     border-radius: 8px;
-    font-family: monospace;
-    font-weight: 900;
-    font-size: 17px;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 15px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -344,7 +352,7 @@
     left: 12px;
     right: 78px;
     top: calc(50% - 24px / 2);
-    font-family: monospace;
+    font-family: 'poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -379,7 +387,7 @@
   .langs {
     height: 24px;
     top: calc(50% - 24px / 2 - 0.36px);
-    font-family: monospace;
+    font-family: 'poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -399,11 +407,11 @@
   }
 
   #ht {
-    margin-left: -30%;
+    margin-left: -33%;
   }
 
   #cs {
-    margin-left: -5.3rem;
+    margin-left: -5.5rem;
   }
 
   .containers {
@@ -418,7 +426,7 @@
 
   .text {
     flex: 1;
-    font-family: monospace;
+    font-family: 'poppins';
     font-size: 1.3rem;
     line-height: 20px;
     font-weight: bolder;
