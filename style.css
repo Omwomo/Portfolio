@@ -151,6 +151,7 @@
     gap: 0.5rem;
     width: 13.375;
     height: 1.5rem;
+    margin-left: -13%;
   }
 
   .language {
@@ -186,7 +187,6 @@
   .button {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 12px;
     gap: 10px;
@@ -196,12 +196,13 @@
     border-radius: 8px;
     font-family: monospace;
     font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
+    font-weight: 800;
+    font-size: 15px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
+    display: inline-flex;
   }
 
   .button:hover {
@@ -299,9 +300,8 @@
     border: 1px solid #6070ff;
     border-radius: 8px;
     font-family: monospace;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 17px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -330,17 +330,17 @@
     height: 72px;
     display: flex;
     align-items: center;
-    margin-top: -6rem;
+    margin-top: -4rem;
   }
 
   .lang_head_icon {
     width: 15px;
     height: 15px;
-    margin-left: 18rem;
+    margin-left: 16rem;
   }
 
   h6 {
-    margin-left: -19rem;
+    margin-left: -17.2rem;
     height: 24px;
     left: 12px;
     right: 78px;
@@ -395,35 +395,40 @@
     left: 12px;
     background: none;
     border: none;
-    margin-left: -8rem;
+    margin-left: -50%;
     float: right;
   }
 
   #ht {
-    margin-left: -6.5rem;
+    margin-left: -30%;
   }
 
   #cs {
     margin-left: -5.3rem;
   }
-
-  .frameworks {
+  .container {
+    display: flex;
+    align-items: center;
     width: 327px;
     height: 72px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
   }
 
-  .frame_line {
-    height: 1px;
-    background: #dfe1e6;
+  .text {
+    flex: 1;
+    font-family: monospace;
+    font-size: 1.3rem;
+    line-height: 20px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
-  .frame_icon {
-    width: 8px;
-    height: 14px;
-    background: #505f79;
+  .image {
+    width: 20px;
+    height: 17px;
+    margin-right: 2.5rem;
   }
 }
