@@ -135,7 +135,7 @@
   }
 
   .info {
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.938rem;
@@ -163,7 +163,7 @@
     background: #ebebff;
     border-radius: 8px;
     height: 16px;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -194,7 +194,7 @@
     height: 48px;
     border: 1px solid #6070ff;
     border-radius: 8px;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -267,7 +267,7 @@
   h5 {
     width: 327px;
     height: 35px;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -280,7 +280,7 @@
   .about_description {
     width: 327px;
     height: 147px;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -306,7 +306,7 @@
     height: 48px;
     border: 1px solid #6070ff;
     border-radius: 8px;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 24px;
@@ -352,7 +352,7 @@
     left: 12px;
     right: 78px;
     top: calc(50% - 24px / 2);
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -387,7 +387,7 @@
   .langs {
     height: 24px;
     top: calc(50% - 24px / 2 - 0.36px);
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -426,7 +426,7 @@
 
   .text {
     flex: 1;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-size: 1.3rem;
     line-height: 20px;
     font-weight: bolder;
