@@ -73,7 +73,7 @@
     gap: 0.75;
     width: 20.438rem;
     height: 34.5rem;
-    background: #ffffff;
+    background: #fff;
     border: 0.063rem solid #dfe1e6;
     border-radius: 1rem;
   }
@@ -99,7 +99,7 @@
 
   .project_name {
     margin-top: 0.2rem;
-    font-family: 'monospace';
+    font-family: monospace;
     font-style: normal;
     font-weight: 1200;
     font-size: 1.8rem;
@@ -123,21 +123,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0rem;
   }
 
   .info_block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 0.75rem;
     width: 18.438rem;
     height: 18rem;
   }
 
   .info {
-    font-family: 'monospace';
+    font-family: monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 0.938rem;
@@ -150,7 +148,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 0.5rem;
     width: 13.375;
     height: 1.5rem;
@@ -162,17 +159,16 @@
     align-items: center;
     padding: 4px 12px;
     width: 57px;
-    height: 1.5rem;
-    background: #EBEBFF;
+    background: #ebebff;
     border-radius: 8px;
     height: 16px;
-    font-family: 'monospace';
+    font-family: monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070FF;
+    color: #6070fd;
   }
 
   #html {
@@ -196,25 +192,21 @@
     gap: 10px;
     width: 126px;
     height: 48px;
-    left: 0px;
-    top: calc(50% - 48px/2);
-    border: 1px solid #6070FF;
+    border: 1px solid #6070ff;
     border-radius: 8px;
-    font-family: 'monospace';
+    font-family: monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #396DF2;
+    color: #396df2;
   }
 
   .button:hover {
-    background: #6070FF;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    background: #6070ff;
+    box-shadow: 8px 16px rgba(64, 83, 252, 0.24);
     color: #ffffff;
   }
 
@@ -238,7 +230,7 @@
     width: 375px;
     height: 2788px;
     left: 0px;
-    top: 718px
+    top: 718px;
   }
 
   .about {
@@ -260,43 +252,34 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 12px;
     width: 327px;
     height: 346px;
-    margin-top: 0rem;
   }
+
   h5 {
     width: 327px;
     height: 35px;
-    font-family: 'monospace';
+    font-family: monospace;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 52px;
     display: flex;
     align-items: center;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .about_description {
     width: 327px;
     height: 147px;
-    font-family: 'monospace';
+    font-family: monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #344563;
     margin-top: -4.3rem;
-  }
-
-  h7 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    color: #7f8fff;
-    margin-left: -0rem;
   }
 
   .contacts {
@@ -322,17 +305,15 @@
     font-size: 20px;
     line-height: 24px;
     display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #396DF2;
+    color: #396df2;
   }
 
   .skill_list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     width: 327px;
     height: 464.15px;
     margin-top: 10rem;
@@ -342,7 +323,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     width: 327px;
     height: 320.15px;
   }
@@ -366,13 +346,13 @@
     height: 24px;
     left: 12px;
     right: 78px;
-    top: calc(50% - 24px/2);
+    top: calc(50% - 24px / 2);
     font-family: monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
+    color: #000;
   }
 
   .language_list {
@@ -391,7 +371,7 @@
     align-items: center;
     width: 303px;
     height: 66.72px;
-    background: #F7F7F9;
+    background: #f7f7f9;
     border-radius: 8px;
     list-style-type: none;
     margin: 1rem;
@@ -401,8 +381,8 @@
 
   .langs {
     height: 24px;
-    top: calc(50% - 24px/2 - 0.36px);
-    font-family: 'monospace';
+    top: calc(50% - 24px / 2 - 0.36px);
+    font-family: monospace;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -415,7 +395,6 @@
     width: 48px;
     height: 48px;
     left: 12px;
-    border: 1px solid #FFFFFF;
     background: none;
     border: none;
     margin-left: -8rem;
@@ -441,14 +420,12 @@
 
   .frame_line {
     height: 1px;
-    background: #DFE1E6;
+    background: #dfe1e6;
   }
 
   .frame_icon {
     width: 8px;
     height: 14px;
-    background: #505F79;
+    background: #505f79;
   }
-
-
 }
