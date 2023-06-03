@@ -202,7 +202,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
-    display: inline-flex;
   }
 
   .button:hover {
@@ -406,7 +405,8 @@
   #cs {
     margin-left: -5.3rem;
   }
-  .container {
+
+  .containers {
     display: flex;
     align-items: center;
     width: 327px;
