@@ -474,15 +474,11 @@
     font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: #344563;
     margin-bottom: 2rem;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    color: #EBEBFF;
+    color: #ebebff;
     width: 327px;
     height: 137px;
   }
@@ -498,7 +494,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    color: #172b4d;;
+    color: #172b4d;
     text-align: left;
     margin-bottom: 1rem;
     width: 95%;
@@ -524,7 +520,6 @@
     width: 102%;
     padding: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
     font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
