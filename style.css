@@ -550,11 +550,14 @@
   #cont-form {
     width: 375px;
     height: 779px;
-    background-image: url(background-image.svg);
+    background-image: url(contact-form-shapes-mobile.svg);
     background-color: #6070ff;
     margin-left: -1rem;
     border-radius: 5rem 0 0 0;
-    overflow: hidden;
+    background-repeat: no-repeat;
+    /*padding: 114px 24px;
+    background-position: 100% 100%;
+    height: max-content;*/
   }
 
   body {
