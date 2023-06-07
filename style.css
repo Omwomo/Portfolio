@@ -550,7 +550,7 @@
   #cont-form {
     width: 375px;
     height: 779px;
-    background-image: url(cont-section.svg);
+    background-image: url(background-image.svg);
     background-color: #6070ff;
     margin-left: -1rem;
     border-radius: 5rem 0 0 0;
