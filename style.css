@@ -994,7 +994,7 @@
     background: #f7f7f9;
     border-radius: 8px;
     list-style-type: none;
-    margin: 0rem;
+    margin: 0.001rem;
     padding: 0.0001rem;
     justify-content: flex-start;
   }
