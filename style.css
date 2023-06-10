@@ -1251,3 +1251,13 @@
     display: none;
   }
 }
+/* Increase image size and move text on hover */
+.project .snapshot:hover  {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.project .info_blocks:hover  {
+  transform: translateX(20px);
+  transition: transform 0.3s ease;
+}
