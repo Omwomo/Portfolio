@@ -1250,4 +1250,15 @@
   .about {
     display: none;
   }
+
+/* Increase image size and move text on hover */
+.project:hover .snapshot {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.project:hover .info_blocks {
+  transform: translateX(20px);
+  transition: transform 0.3s ease;
+}
 }
