@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Microverse </title>
+        <title>Eugene's Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,8 +11,10 @@
     </head>
     <body>
         <nav class="hide">
+            <div class="logos">
+                <a href="#"><img src="desktop-logo.svg"></a>
+            </div>
             <ul class="hide-items">
-                <li class="logos"><a href="#"></a><img src="desktop-logo.svg"></li>
                 <li class="navlist" id="portfolio"><a href="#">Portfolio</a></li>
                 <li class="navlist" id="about"><a href="#">About</a></li>
                 <li class="navlist" id="contact"><a href="#">Contact</a></li>
@@ -21,11 +23,21 @@
         <div class = "Intro">
             <header class="header">
                 <nav class="navarea">
-                    <a href="#"> <img class="logo" src="mylogo.svg"></a>
+                    <img class="logo" src="mylogo.svg">
                     <img class="navbar" src="Union.svg">
                 </nav>
+                <!--menu items when hummbugger button is clicked on the mobile version-->
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="#mobiles">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#cont-form">Contact</a></li>
+                    </ul>
+                    <div class="close-button"><img src="img/x.svg"></div>
+                </div>
+                <!-------------------------------------------------------------------->
             </header>
-            <section class = "container">
+            <section id="Portfolio" class = "container">
                 <h1>I'm Eugene.<br>
                     Glad to see you!
                 </h1>
@@ -33,7 +45,7 @@
                     Look through some of my work and experience! If you like what you see and have
                     a project you need coded, don’t hesitate to contact me.
                 </p>
-                <h3>LET'S CONNECT</h3>
+                <span class="let">LET'S CONNECT</span>
                 <ul class="contact">
                     <li><a href="#"><img class="icons" src="Vector.svg"></a></li>
                     <li><a href="#"><img class="icons" src="linkedin.svg"></a></li>
@@ -49,7 +61,7 @@
                     <img class="snapshot" id="snap1" src="snap.svg">
                     <div class="info_blocks">
                         <div class="projos">
-                            <h4 class="project_names">Tonic</h4>
+                            <h2 class="project_names">Tonic</h2>
                             <ul class="detailss">
                                 <li class="details">CANOPY</li>
                                 <li class="details"><img src="count.svg"></li>
@@ -72,7 +84,7 @@
                 <div class="project">
                     <div class="info_blocks">
                         <div class="projos">
-                            <h4 class="project_names">Multi-Post stories</h4>
+                            <h2 class="project_names">Multi-Post stories</h2>
                             <ul class="detailss">
                                 <li class="details">CANOPY</li>
                                 <li class="details"><img src="count.svg"></li>
@@ -97,7 +109,7 @@
                     <img class="snapshot" id="snap2" src="snap1.svg">
                     <div class="info_blocks">
                         <div class="projos">
-                            <h4 class="project_names">Facebook 360</h4>
+                            <h2 class="project_names">Facebook 360</h2>
                             <ul class="detailss">
                                 <li class="details">FACEBOOK</li>
                                 <li class="details"><img src="count.svg"></li>
@@ -120,7 +132,7 @@
                 <div class="project">
                     <div class="info_blocks">
                         <div class="projos">
-                            <h4 class="project_names">Uber Navigation</h4>
+                            <h2 class="project_names">Uber Navigation</h2>
                             <ul class="detailss">
                                 <li class="details">Uber</li>
                                 <li class="details"><img src="count.svg"></li>
@@ -148,7 +160,7 @@
                     <img class="snapshots" id="snap3" src="snap2.svg">
                     <div class="info_block">
                         <div class="projo">
-                            <h4 class="project_name">Tonic</h4>
+                            <h2 class="project_name">Tonic</h2>
                             <ul class="details">
                                 <li class="detail">CANOPY</li>
                                 <li class="detail"><img src="count.svg"></li>
@@ -172,7 +184,7 @@
                     <img class="snapshots" id="snap4" src="snap3.svg">
                     <div class="info_block">
                         <div class="projo">
-                            <h4 class="project_name">Multi-Post Stories</h4>
+                            <h2 class="project_name">Multi-Post Stories</h2>
                             <ul class="details">
                                 <li class="detail">CANOPY</li>
                                 <li class="detail"><img src="count.svg"></li>
@@ -196,7 +208,7 @@
                     <img class="snapshots" id="snap3" src="snap2.svg">
                     <div class="info_block">
                         <div class="projo">
-                            <h4 class="project_name">Tonic</h4>
+                            <h2 class="project_name">Tonic</h2>
                             <ul class="details">
                                 <li class="detail">CANOPY</li>
                                 <li class="detail"><img src="count.svg"></li>
@@ -220,7 +232,7 @@
                     <img class="snapshots" id="snap4" src="snap3.svg">
                     <div class="info_block">
                         <div class="projo">
-                            <h4 class="project_name">Multi-Post Stories</h4>
+                            <h2 class="project_name">Multi-Post Stories</h2>
                             <ul class="details">
                                 <li class="detail">CANOPY</li>
                                 <li class="detail"><img src="count.svg"></li>
@@ -242,15 +254,15 @@
                 </div>
             </section>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about_me">
-                <h5>About Myself</h5>
+                <h2 class="ab">About Myself</h2>
                 <p class="about_description">Hello I’m a software developer! I can help you build a product ,
                     feature or website. Look through some of my work and experience! If you like what you
                     see and have a project you need coded, don’t hesitate to contact me.
                 </p>
                 <div class="media_contact">
-                    <h7 class="let">LET'S CONNECT</h7>
+                    <p class="let">LET'S CONNECT</p>
                     <ul class="contacts">
                         <li><a href="#"><img class="icons" src="Vector.svg"></a></li>
                         <li><a href="#"><img class="icons" src="linkedin.svg"></a></li>
@@ -265,7 +277,7 @@
                 <div class="pgrm_languages">
                     <div class="lang_head">
                         <img class="lang_head_icon" src="downarrow.svg">
-                        <h6>Languages</h6>
+                        <h3 class="la">Languages</h3>
                     </div>
                     <ul class="language_list">
                         <li class="lang_item">
@@ -282,12 +294,12 @@
                         </li>
                     </ul>
                     <div class="containers">
-                        <span class="text">Frameworks</span>
+                        <h3 class="text">Frameworks</h3>
                         <img src="sidearrow.svg" alt="Your Image" class="image">
                     </div>
                     <img class="line" src="line.svg">
                     <div class="containers">
-                        <span class="text">Skills</span>
+                        <h3 class="text">Skills</h3>
                         <img src="sidearrow.svg" alt="Your Image" class="image">
                     </div>
                     <img class="line" src="line.svg">
@@ -297,7 +309,7 @@
 
         <section class="abouts">
             <div class="about_mes">
-                <h5 class="h5s">About Myself</h5>
+                <h2 class="h5s">About Myself</h2>
                 <p class="about_descriptions">Hello I’m a software developer! I can help you build a product ,
                     feature or website. Look through some of my work and experience! If you like what you
                     see and have a project you need coded, don’t hesitate to contact me.
@@ -318,7 +330,7 @@
                 <div class="pgrm_languagess">
                     <div class="lang_heads">
                         <img class="lang_head_icons" src="downarrow.svg">
-                        <h6 class="h6s">Languages</h6>
+                        <h3 class="h6s">Languages</h3>
                     </div>
                     <ul class="language_lists">
                         <li class="lang_items">
@@ -335,12 +347,12 @@
                         </li>
                     </ul>
                     <div class="containerss">
-                        <span class="texts">Frameworks</span>
+                        <h3 class="texts">Frameworks</h3>
                         <img src="sidearrow.svg" alt="Your Image" class="image">
                     </div>
                     <img class="lines" src="line.svg">
                     <div class="containerss">
-                        <span class="texts">Skills</span>
+                        <h3 class="texts">Skills</h3>
                         <img src="sidearrow.svg" alt="Your Image" class="image">
                     </div>
                     <img class="lines" src="line.svg">
@@ -352,18 +364,18 @@
         <section class="contact-form" id="cont-form">
             <div >
                 <div class="contain">
-                    <h1>Contact Me</h1>
+                    <h2>Contact Me</h2>
                     <p>
                         If you have an application you are interested in developing, a feature that you need built,
                         or a project that needs coding, I'd love to help with it!
                     </p>
                     <form id="fs-frm" class="fs" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xoqzownz" method="post">
                         <fieldset>
-
+                        <label hidden>Enter your name</label>
                         <input type="text" name="name" id="full-name" placeholder="Your Name" maxlength="30" required>
-
+                        <label hidden>Email</label>
                         <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" required>
-
+                        <label hidden>Write message</label>
                         <textarea name="message" id="message" rows="5" placeholder="Write your message here" maxlength="500" required></textarea>
 
                         <input id="sub" class="button" type="submit" value="Get in touch" required>
@@ -372,6 +384,6 @@
                 </div>
             </div>
         </section>
-
+        <script src="script.js"></script>
     </body>
 </html>
