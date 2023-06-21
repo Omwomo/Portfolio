@@ -622,6 +622,17 @@
     list-style: none;
   }
 
+  .pop-langs li {
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ebebff;
+    height: 1rem;
+    font-size: 12px;
+    color: #6070ff;
+  }
+
   .mobile-menu ul li {
     padding: 2%;
     text-decoration: none;
@@ -663,6 +674,7 @@
     height: 80%;
     overflow: auto;
     position: fixed;
+    display: none;
   }
 
   .pop-heading {
@@ -692,6 +704,17 @@
 
   .pop-details ul li {
     padding-right: 1rem;
+  }
+
+  .pop-langss-new li {
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ebebff;
+    height: 1rem;
+    font-size: 12px;
+    color: #6070ff;
   }
 
   .pop-details .can {
@@ -729,17 +752,6 @@
     margin: 0;
   }
 
-  .pop-langs li {
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #ebebff;
-    height: 1rem;
-    font-size: 12px;
-    color: #6070ff;
-  }
-
   .popup-container .ln {
     padding: 1rem;
   }
@@ -765,7 +777,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #396DF2;
+    color: #396df2;
     white-space: nowrap;
     margin: 0;
   }
@@ -777,7 +789,7 @@
     margin-right: 16px;
     padding: 16px;
     gap: 12px;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
     height: 0.8rem;
     flex-wrap: nowrap;
@@ -790,10 +802,6 @@
   }
 
   .popup-containers {
-    display: none;
-  }
-
-  .popup-container {
     display: none;
   }
 
@@ -1485,7 +1493,7 @@
     height: 80%;
     overflow: auto;
     position: fixed;
-    z-index: 9999;
+    display: none;
   }
 
   .pop-headings {
@@ -1564,15 +1572,6 @@
     flex-direction: column;
   }
 
-  .pop-langss-new ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 2rem;
-    padding-left: 2rem;
-  }
-
   .pop-langss ul {
     display: flex;
     list-style-type: none;
@@ -1602,17 +1601,6 @@
     padding-top: 0.5rem;
   }
 
-  .pop-langss-new li {
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #ebebff;
-    height: 1rem;
-    font-size: 12px;
-    color: #6070ff;
-  }
-
   .popup-containers .lns {
     padding: 1rem;
   }
@@ -1637,7 +1625,7 @@
     font-size: 15px;
     line-height: 20px;
     text-align: center;
-    color: #396DF2;
+    color: #396df2;
     white-space: nowrap;
     margin: 0;
   }
@@ -1649,7 +1637,7 @@
     margin-right: 16px;
     padding: 16px;
     gap: 12px;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
     height: 0.8rem;
     flex-wrap: nowrap;
@@ -1663,10 +1651,6 @@
   }
 
   .popup-container {
-    display: none;
-  }
-
-  .popup-containers {
     display: none;
   }
 }
