@@ -273,12 +273,13 @@
                         <label hidden>Enter your name</label>
                         <input type="text" name="name" id="full-name" placeholder="Your Name" maxlength="30" required>
                         <label hidden>Email</label>
-                        <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" required>
+                        <input type="email" name="_replyto" class="email" id="email-address" placeholder="email@example.com" required>
                         <label hidden>Write message</label>
                         <textarea name="message" id="message" rows="5" placeholder="Write your message here" maxlength="500" required></textarea>
 
                         <input id="sub" class="button" type="submit" value="Get in touch" required>
                         </fieldset>
+                        <div id="error-message"></div>
                     </form>
                 </div>
             </div>
