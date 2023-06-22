@@ -804,6 +804,10 @@
     display: none;
   }
 
+  .pop {
+    display: none;
+  }
+
   body {
     background-color: #e5e5e5;
     overflow-x: hidden;
@@ -1492,6 +1496,14 @@
     height: 80%;
     overflow: auto;
     position: fixed;
+  }
+
+  .pop {
+    display: none;
+  }
+
+  .popss {
+    display: none;
   }
 
   .pop-headings {
