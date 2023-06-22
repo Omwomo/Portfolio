@@ -15,8 +15,194 @@ closeBtn.addEventListener('click', toggle);
 links.forEach((link) => {
   link.addEventListener('click', toggle);
 });
+// //////////////////////////////////////
 
-// JavaScript array to store mobile version project information
+// //////////////////////////////////////
+
+// Function to generate the HTML code for a project
+function generateProjectHTML(projectName, imageSrc, company, role, year) {
+  return `
+      <div class='project'>
+          <img class='snapshot' src='${imageSrc}'>
+          <div class='info_blocks'>
+              <div class='projos'>
+                  <h2 class='project_names'>${projectName}</h2>
+                  <ul class='detailss'>
+                      <li class='details'>${company}</li>
+                      <li class='details'><img src='count.svg'></li>
+                      <li class='details'>${role}</li>
+                      <li class='details'><img src='count.svg'></li>
+                      <li class='details'>${year}</li>
+                  </ul>
+              </div>
+              <p class='infos'>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+              <ul class='languagess'>
+                  <li class='languages' id='html1'>HTML</li>
+                  <li class='languages' id='css1'>CSS</li>
+                  <li class='languages' id='javascript1'>Javascript</li>
+              </ul>
+              <button class='buttons' type='button'>see project</button>
+          </div>
+      </div>
+  `;
+}
+
+// Function to generate the HTML code for the entire 'work' section
+function generateWorkSectionHTML() {
+  const projects = [
+    {
+      projectName: 'Tonic',
+      imageSrc: 'snap.svg',
+      company: 'CANOPY',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+    {
+      projectName: 'Multi-Post stories',
+      imageSrc: 'snap.svg',
+      company: 'CANOPY',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+    {
+      projectName: 'Facebook 360',
+      imageSrc: 'snap1.svg',
+      company: 'FACEBOOK',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+    {
+      projectName: 'Uber Navigation',
+      imageSrc: 'snap2.svg',
+      company: 'Uber',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+  ];
+
+  let workHTML = `
+      <section class='work'>
+          <section class='works' id='desktops'>
+  `;
+
+  // Generate HTML for each project
+  projects.forEach((project) => {
+    workHTML += generateProjectHTML(
+      project.projectName,
+      project.imageSrc,
+      project.company,
+      project.role,
+      project.year,
+    );
+  });
+
+  workHTML += `
+          </section>
+      </section>
+  `;
+
+  return workHTML;
+}
+
+// Call the function to generate the 'work' section HTML
+const workSectionHTML = generateWorkSectionHTML();
+
+// Insert the generated HTML into the document
+document.getElementById('my-work-container').innerHTML = workSectionHTML;
+
+// ///////////////////////////////////////
+// Function to generate the HTML code for the mobile version of a project
+function generateMobileProjectHTML(projectName, imageSrc, company, role, year) {
+  return `
+      <div class="projects">
+          <img class="snapshots" src="${imageSrc}">
+          <div class="info_block">
+              <div class="projo">
+                  <h2 class="project_name">${projectName}</h2>
+                  <ul class="details">
+                      <li class="detail">${company}</li>
+                      <li class="detail"><img src="count.svg"></li>
+                      <li class="detail">${role}</li>
+                      <li class="detail"><img src="count.svg"></li>
+                      <li class="detail">${year}</li>
+                  </ul>
+              </div>
+              <p class="info">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+              <ul class="languages">
+                  <li class="language" id="html">HTML</li>
+                  <li class="language" id="css">CSS</li>
+                  <li class="language" id="javascript">Javascript</li>
+              </ul>
+              <button class="button">see project</button>
+          </div>
+      </div>
+  `;
+}
+
+// Function to generate the HTML code for the entire mobile version of the "work" section
+function generateMobileWorkSectionHTML() {
+  const mobileProjects = [
+    {
+      projectName: 'Tonic',
+      imageSrc: 'snap2.svg',
+      company: 'CANOPY',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+    {
+      projectName: 'Multi-Post Stories',
+      imageSrc: 'snap3.svg',
+      company: 'CANOPY',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+    {
+      projectName: 'Tonic',
+      imageSrc: 'snap2.svg',
+      company: 'CANOPY',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+    {
+      projectName: 'Multi-Post Stories',
+      imageSrc: 'snap3.svg',
+      company: 'CANOPY',
+      role: 'Back End Dev',
+      year: '2023',
+    },
+  ];
+
+  let mobileWorkHTML = `
+      <section class="work" id="mobiles">
+  `;
+
+  // Generate HTML for each mobile project
+  mobileProjects.forEach((project) => {
+    mobileWorkHTML += generateMobileProjectHTML(
+      project.projectName,
+      project.imageSrc,
+      project.company,
+      project.role,
+      project.year,
+    );
+  });
+
+  mobileWorkHTML += `
+      </section>
+  `;
+
+  return mobileWorkHTML;
+}
+
+// Call the function to generate the mobile version of the "work" section HTML
+const mobileWorkSectionHTML = generateMobileWorkSectionHTML();
+
+// Insert the generated mobile version HTML into the document
+document.getElementById('my-work-container-mobile').innerHTML = mobileWorkSectionHTML;
+
+// /////////////////////////////////////////
+
+// JavaScript array to store mobile version popuop module information
 const project = [
   {
     name: 'Tonic',
