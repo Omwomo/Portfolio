@@ -203,40 +203,6 @@ document.getElementById('my-work-container-mobile').innerHTML = mobileWorkSectio
 // /////////////////////////////////////////
 
 // JavaScript array to store mobile version popuop module information
-const project = [
-  {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featuredImage: 'snap.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project1',
-    sourceLink: 'https://github.com/Omwomo',
-  },
-  {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featuredImage: 'snap.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project2',
-    sourceLink: 'https://github.com/Omwomo',
-  },
-  {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featuredImage: 'snap.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project2',
-    sourceLink: 'https://github.com/Omwomo',
-  },
-  {
-    name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featuredImage: 'snap.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project2',
-    sourceLink: 'https://github.com/Omwomo',
-  },
-];
 
 // JavaScript array to store desktop version project information
 const projects = [
@@ -279,7 +245,7 @@ const projects = [
 ];
 
 // Function to open the popup and populate project details for mobile version
-function openPopup(project) {
+function openPopup(projects) {
   const popupContainer = document.querySelector('.popup-container');
   const popupHeading = popupContainer.querySelector('.pop-header');
   const popupImage = popupContainer.querySelector('.pop-img img');
@@ -289,21 +255,21 @@ function openPopup(project) {
   const sourceLink = popupContainer.querySelector('.github-link');
 
   // Populate project details
-  popupHeading.textContent = project.name;
-  popupText.textContent = project.description;
-  popupImage.src = project.featuredImage;
+  popupHeading.textContent = projects.name;
+  popupText.textContent = projects.description;
+  popupImage.src = projects.featuredImage;
 
   // Add technologies to the list
   popupLangs.innerHTML = '';
-  project.technologies.forEach((technology) => {
+  projects.technologies.forEach((technology) => {
     const li = document.createElement('li');
     li.textContent = technology;
     popupLangs.appendChild(li);
   });
 
   // Set the link URLs
-  liveLink.href = project.liveLink;
-  sourceLink.href = project.sourceLink;
+  liveLink.href = projects.liveLink;
+  sourceLink.href = projects.sourceLink;
 
   // Show the popup
   popupContainer.style.display = 'block';
@@ -368,7 +334,7 @@ const desktopButtons = document.querySelectorAll('.buttons');
 
 mobileButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    openPopup(project[index]); // Open the popup for the corresponding project
+    openPopup(projects[index]); // Open the popup for the corresponding project
   });
 });
 
