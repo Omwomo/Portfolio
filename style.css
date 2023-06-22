@@ -1664,3 +1664,25 @@
     display: none;
   }
 }
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.redbox {
+  bdisplay: block;
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #172b4d;
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 27rem;
+  border: 1px solid #e61111;
+  border-radius: 8px;
+  background-color: #fff;
+  height: 2.5rem;
+  padding-left: 1rem;
+}
