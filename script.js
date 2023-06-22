@@ -351,3 +351,17 @@ closeButton.addEventListener('click', closePopup);
 // Attach click event listener to close button for desktop version
 const closeButtons = document.querySelector('.pop-btns');
 closeButtons.addEventListener('click', closePopups);
+document.getElementById('fs-frm').addEventListener('submit', (event) => {
+  // prevent default action
+
+  // get email input value.
+  const emailValue = document.getElementById('email-address').value;
+
+  // Check for email casing.
+  if (emailValue === emailValue.toLowerCase()) {
+    document.getElementById('error-message').innerHTML = 'form submitted succesfully';
+  } else {
+    document.getElementById('error-message').innerHTML = 'Email must be in lower case';
+    event.preventDefault();
+  }
+});
