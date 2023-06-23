@@ -202,9 +202,7 @@ document.getElementById('my-work-container-mobile').innerHTML = mobileWorkSectio
 
 // /////////////////////////////////////////
 
-// JavaScript array to store mobile version popuop module information
-
-// JavaScript array to store desktop version project information
+// JavaScript array to store project information
 const projects = [
   {
     name: 'Tonic',
@@ -351,6 +349,8 @@ closeButton.addEventListener('click', closePopup);
 // Attach click event listener to close button for desktop version
 const closeButtons = document.querySelector('.pop-btns');
 closeButtons.addEventListener('click', closePopups);
+
+// Add form validation.
 document.getElementById('fs-frm').addEventListener('submit', (event) => {
   // prevent default action
 
@@ -365,3 +365,43 @@ document.getElementById('fs-frm').addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// ///////////////////////////////////////////////////
+
+// Retrieve the form data from local storage
+function getFormData() {
+  const storedData = localStorage.getItem('form-data');
+  if (storedData) {
+    return JSON.parse(storedData);
+  }
+  return {};
+}
+
+// Save the form data to local storage
+function saveFormData(formData) {
+  localStorage.setItem('form-data', JSON.stringify(formData));
+}
+
+// Update the form fields with the stored data
+function updateFormFields(formData) {
+  document.getElementById('full-name').value = formData.name || '';
+  // eslint-disable-next-line no-underscore-dangle
+  document.getElementById('email-address').value = formData._replyto || '';
+  document.getElementById('message').value = formData.message || '';
+}
+
+// Handle input field changes and update the form data
+function handleInputChange(event) {
+  const formData = getFormData();
+  formData[event.target.name] = event.target.value;
+  saveFormData(formData);
+}
+
+// Add event listeners to input fields
+document.getElementById('full-name').addEventListener('input', handleInputChange);
+document.getElementById('email-address').addEventListener('input', handleInputChange);
+document.getElementById('message').addEventListener('input', handleInputChange);
+
+// Load the form data and update the form fields on page load
+const formData = getFormData();
+updateFormFields(formData);
