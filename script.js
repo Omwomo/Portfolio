@@ -389,3 +389,19 @@ function updateFormFields(formData) {
   document.getElementById('email-address').value = formData._replyto || '';
   document.getElementById('message').value = formData.message || '';
 }
+
+// Handle input field changes and update the form data
+function handleInputChange(event) {
+  const formData = getFormData();
+  formData[event.target.name] = event.target.value;
+  saveFormData(formData);
+}
+
+// Add event listeners to input fields
+document.getElementById('full-name').addEventListener('input', handleInputChange);
+document.getElementById('email-address').addEventListener('input', handleInputChange);
+document.getElementById('message').addEventListener('input', handleInputChange);
+
+// Load the form data and update the form fields on page load
+const formData = getFormData();
+updateFormFields(formData);
