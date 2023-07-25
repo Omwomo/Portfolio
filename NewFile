@@ -1,0 +1,16 @@
+/*@media (min-width: 375px), (min-width: 768px) {*/
+  .Intro {
+    background-image: url("header-shapes\ mobile@2x.svg");
+    position: absolute;
+  }
+  .logo {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 2rem;
+  }
+  .navbar {
+    float: right;
+  }
+/*}
