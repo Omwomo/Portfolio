@@ -73,8 +73,7 @@
 
 > Description of the project key features.
 
-- **[It has an html and css files.]**
-- **[the project is configured with html and css linters]**
+- **The project is about me as developer. It entails info about me, projects I've worked on, my skills and contacts***
 - **[Github workflow has been properly adhered to in this project.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
